@@ -10,7 +10,8 @@ def test_add_negative_numbers():
     print("✓ test_add_negative_numbers passed")
 
 def test_add_floats():
-    assert add_numbers(1.5, 2.3) == 3.8
+    result = add_numbers(1.5, 2.3)
+    assert abs(result - 3.8) < 1e-9
     print("✓ test_add_floats passed")
 
 if __name__ == "__main__":
